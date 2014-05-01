@@ -6,8 +6,8 @@
 
 #define N 1000
 #define thermloops 30000
-#define measureloops 150000
-#define datainterval 100
+#define measureloops 250000
+#define datainterval 25
 #define acceptanceinterval 50
 
 #define minacceptance 0.2
@@ -78,9 +78,9 @@ int main(int argc, char * argv[])
 	}
 	cout << "Finished Thermalization\nStarting measurement\n";
 	
-	for (int i = 0; i < 10; i++)
-		printf("(%g, %g, %g)\n(%g, %g, %g)\n\n",walker[i][0][0],walker[i][0][1],walker[i][0][2],walker[i][1][0],walker[i][1][1],walker[i][1][2]);
-	cin.ignore();
+	//for (int i = 0; i < 10; i++)
+	//	printf("(%g, %g, %g)\n(%g, %g, %g)\n\n",walker[i][0][0],walker[i][0][1],walker[i][0][2],walker[i][1][0],walker[i][1][1],walker[i][1][2]);
+	//cin.ignore();
 
 	for (int i=0; i<measureloops;i++)
 	{
